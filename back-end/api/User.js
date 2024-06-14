@@ -10,29 +10,30 @@ const bcrypt = require('bcrypt')
  * /usuario/cadastro:
  *   post:
  *     description: Cadastre novo usuário
- *     consumes:
- *       - application/json
  *     tags: [Login]
+ *     consumes:
+ *       - application/x-www-form-urlencoded
  *     parameters:
- *       - in: body
- *         name: body
- *         description: Dados do usuário a serem cadastrados
+ *       - in: formData
+ *         name: username
+ *         description: Identificador único do usuário. Deve ter entre 3 e 15 caracteres e pode conter apenas letras minúsculas, números, sublinhados ou hifens.
  *         required: true
- *         schema:
- *           type: object
- *           properties:
- *             username:
- *               type: string
- *               description: Identificador único do usuário. Deve ter entre 3 e 15 caracteres e pode conter apenas letras minúsculas, números, sublinhados ou hifens.
- *             email:
- *               type: string
- *               description: Email válido do usuário.
- *             password:
- *               type: string
- *               description: Senha do usuário. Deve ter pelo menos 8 caracteres.
- *             confirmPassword:
- *               type: string
- *               description: Confirmação da senha do usuário. Deve ser igual à senha.
+ *         type: string
+ *       - in: formData
+ *         name: email
+ *         description: Email válido do usuário.
+ *         required: true
+ *         type: string
+ *       - in: formData
+ *         name: password
+ *         description: Senha do usuário. Deve ter pelo menos 8 caracteres.
+ *         required: true
+ *         type: string
+ *       - in: formData
+ *         name: confirmPassword
+ *         description: Confirmação da senha do usuário. Deve ser igual à senha.
+ *         required: true
+ *         type: string
  *     responses:
  *       201:
  *         description: Usuário cadastrado com sucesso.
@@ -92,23 +93,18 @@ router.post('/cadastro', async (req, res) => {
  * /usuario/login:
  *   post:
  *     description: Login
- *     consumes:
- *       - application/json
  *     tags: [Login]
  *     parameters:
- *       - in: body
- *         name: body
- *         description: Dados do usuário para login
+ *       - in: formData
+ *         name: email
+ *         description: Email válido do usuário.
  *         required: true
- *         schema:
- *           type: object
- *           properties:
- *             email:
- *               type: string
- *               description: Email válido do usuário.
- *             password:
- *               type: string
- *               description: Senha do usuário
+ *         type: string
+ *       - in: formData
+ *         name: password
+ *         description: Senha do usuário
+ *         required: true
+ *         type: string
  *     responses:
  *       201:
  *         description: Usuário encontrado e autenticado.
