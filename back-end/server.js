@@ -1,6 +1,7 @@
 require('./config/db')
 
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const swaggerJsdoc = require("swagger-jsdoc")
 const swaggerUi = require("swagger-ui-express");
@@ -16,6 +17,8 @@ const UserRouter = require('./api/User')
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(cors());
   
 app.use(
     '/api-docs',
