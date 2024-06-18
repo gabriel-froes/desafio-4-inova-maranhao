@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --destaque-azul: #2f8aa5;
+  --destaque-amarelo: #ffc107;
+  --cor-texto: #ffffff;
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  padding: 100px 15px;
+  background-color: var(--destaque-azul);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--cor-texto);
+  padding: 60px 30px;
+  border-radius: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-mascote {
+  width: 70px;
+  height: 70px;
+}
+
+.container-mascote img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.container h1 {
+  font-family: var(--font-fredoka);
+  font-size: 2.25rem;
+  color: var(--destaque-azul);
+}
+
+.formulario-cadastro {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-cadastro .mensagem-erro {
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: red;
+  padding-bottom: 5px;
+}
+
+.formulario-cadastro label {
+  font-family: var(--font-fredoka);
+  font-size: 1.25rem;
+  color: var(--destaque-azul);
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.formulario-cadastro input {
+  width: 100%;
+  padding: 16px 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(135, 135, 135, 0.65);
+  border-radius: 12px;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+}
+
+.formulario-cadastro input:focus {
+  outline: 1px solid var(--destaque-azul);
+}
+
+.formulario-cadastro button {
+  margin-top: 30px;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--destaque-amarelo);
+  color: var(--destaque-azul);
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario-cadastro button:hover {
+  background-color: #eab107;
+}
+
+.texto-login {
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #686868;
+}
+
+.texto-login a {
+  font-weight: 600;
+  color: #686868;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.texto-login a:hover {
+  color: #3b3b3b;
+}

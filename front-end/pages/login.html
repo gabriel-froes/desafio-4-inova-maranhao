@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Um jogo interativo repleto de perguntas desafiadoras que vão estimular e aperfeiçoar suas habilidades financeiras de modo cativante e dinâmico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um jogo interativo repleto de perguntas desafiadoras que vão estimular e aperfeiçoar suas habilidades financeiras de modo cativante e dinâmico"
+    />
     <title>Login - CAPIBOSS</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="../styles/formulario.css" />
+  </head>
 
-<body>
- <h1>Login</h1>
+  <body>
+    <div class="container">
+      <div class="container-mascote">
+        <img src="../assets/mascote-img.jpg" alt="Mascote do CAPIBOSS" />
+      </div>
+      <h1>Login</h1>
+      <form class="formulario-cadastro">
+        <p id="message" class="mensagem-erro"></p>
 
-</body>
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
 
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Informe sua senha"
+          required
+        />
+
+        <button type="button">Entrar</button>
+      </form>
+
+      <p class="texto-login">
+        Não possui cadastro? <a href="../pages/cadastro.html">Cadastre-se</a>
+      </p>
+    </div>
+  </body>
 </html>
