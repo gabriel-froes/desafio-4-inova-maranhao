@@ -19,6 +19,7 @@ body {
   padding: 100px 15px;
   background-color: var(--destaque-azul);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -122,4 +123,39 @@ body {
 
 .texto-login a:hover {
   color: #3b3b3b;
+}
+
+/* tela de cadastro realizado com sucesso */
+.cadastro-realizado-bg {
+  width: 100%;
+  height: calc(100% + 319px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-realizado-conteudo {
+  width: 100%;
+  max-width: 300px;
+  min-height: 150px;
+  background-color: var(--cor-texto);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-realizado-conteudo p {
+  font-family: var(--font-fredoka);
+  font-size: 1.125rem;
+  color: var(--destaque-azul);
+}
+
+.hidden {
+  display: none;
 }

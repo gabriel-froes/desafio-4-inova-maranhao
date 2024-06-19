@@ -1,21 +1,21 @@
-let usernameInput = document.getElementById("username")
-let emailInput = document.getElementById("email")
-let passwordInput = document.getElementById("password")
-let confirmPasswordInput = document.getElementById("confirmPassword")
+let username = document.getElementById("username")
+let email = document.getElementById("email")
+let password = document.getElementById("password")
+let confirmPassword = document.getElementById("confirmPassword")
 const messageResponse = document.getElementById("message")
+const btnCadastrar = document.getElementById("btn-cadastar")
+const cadastroRealizado = document.getElementById("cadastro-realizado")
+
+btnCadastrar.addEventListener("click", registerNewUser)
 
 async function registerNewUser() {
-  let usernameValue = usernameInput.value
-  let emailValue = emailInput.value
-  let passwordValue = passwordInput.value
-  let confirmPasswordValue = confirmPasswordInput.value
   const url = "https://desafio-4-inova-maranhao.onrender.com/usuario/cadastro"
 
   const formData = new URLSearchParams()
-  formData.append("username", usernameValue)
-  formData.append("email", emailValue)
-  formData.append("password", passwordValue)
-  formData.append("confirmPassword", confirmPasswordValue)
+  formData.append("username", username.value)
+  formData.append("email", email.value)
+  formData.append("password", password.value)
+  formData.append("confirmPassword", confirmPassword.value)
 
   try {
     const response = await fetch(url, {
@@ -31,11 +31,18 @@ async function registerNewUser() {
         if (data.message == "Usuário criado com sucesso!") {
           console.log("Deu certooo!!")
 
-          usernameInput.value = ""
-          emailInput.value = ""
-          passwordInput.value = ""
-          confirmPasswordInput.value = ""
+          username.value = ""
+          email.value = ""
+          password.value = ""
+          confirmPassword.value = ""
           messageResponse.innerHTML = ""
+
+          cadastroRealizado.classList.remove("hidden")
+
+          setTimeout(() => {
+            // redirecionando para página de login
+            window.location.href = "login.html"
+          }, 2000)
         } else {
           messageResponse.innerHTML = data.message
         }

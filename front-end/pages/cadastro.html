@@ -56,12 +56,18 @@
           required
         />
 
-        <button type="button" onclick="registerNewUser()">Cadastrar</button>
+        <button id="btn-cadastar" type="button">Cadastrar</button>
       </form>
 
       <p class="texto-login">
         Já possui cadastro? <a href="../pages/login.html">Faça login</a>
       </p>
+    </div>
+
+    <div id="cadastro-realizado" class="cadastro-realizado-bg hidden">
+      <div class="cadastro-realizado-conteudo">
+        <p>Cadastro realizado com sucesso!</p>
+      </div>
     </div>
 
     <script src="../js/cadastro.js"></script>
