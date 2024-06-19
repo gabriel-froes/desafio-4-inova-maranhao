@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-titulo: #FFFFFF;
+    --cor-texto: #EBEBEB;
+    --font-fredoka: 'Fredoka', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagens/bg-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    overflow: hidden; 
+}
+
+/*titulo"Sobre o CAPIBOSS"*/
+html {
+    margin: auto 30%;
+    display: flex;
+    height: 100%;
+    width: 71%;
+    font-size: 2.5rem;
+    align-items:center;                         
+    color: var(--cor-titulo);
+    padding: 20px;
+}
+
+/* Conteudo Principal */
+/* Definindo as propriedades do contêiner */
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    align-items:left;
+    margin-inline:auto;   
+    font-family: var(--font-fredoka);
+    font-size: 1.4rem;
+    line-height: 2.0; 
+    margin-left: 800px; 
+ 
+}
+
+/* Ajustando o estilo do p */
+.conteudo-p, .conteudo-p1 {
+    width: 82%;
+    font-size: 1.1rem;
+    font-family: var(--font-inter);
+    display: flex;
+    justify-content: center; 
+    margin: 27px;
+    text-align: left; 
+    line-height: 1.8; 
+    margin-left: 10px;
+    font-weight: 300;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    color: var(--cor-texto);
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+
+
