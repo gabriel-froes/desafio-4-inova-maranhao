@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const nodemailer = require('nodemailer');
+
 const User = require('./../models/User')
 const bcrypt = require('bcrypt')
 
@@ -77,13 +79,33 @@ router.post('/cadastro', async (req, res) => {
         password: hashedPassword
     })
 
+    const confirmationUrl = `http://siteQueVaiFicarHospeadadoOdesafio/confirm?token=${token}`;
+
     try {
-        await newUser.save()
-        return res.status(201).json({message: 'Usuário criado com sucesso!'})
-    }
-    catch (err) {
-        console.log(err)
-        return res.status(500).json({message: 'Erro ao salvar novo usuário no banco de dados!'})
+        await newUser.save();
+
+        const transport = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
+            auth: {
+                user: `${email}`,
+                pass: `${password}`,
+            }
+        });
+
+        await transport.sendMail({
+            from: `nome do projeto <${email}>`,
+            to: email,
+            subject: 'Confirmação de E-mail',
+            html: `<h1>Olá, ${username}!!</h1> <p>Por favor, confirme seu endereço de e-mail clicando no link abaixo:</p><a href="${confirmationUrl}">Confirmar E-mail</a>`,
+            text: `Olá, ${username}!! Por favor, confirme seu endereço de e-mail clicando no link: ${confirmationUrl}`
+        });
+
+        return res.status(201).json({ message: 'Usuário criado com sucesso! Confirme seu e-mail para ativar a conta.' });
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({ message: 'Erro ao salvar novo usuário no banco de dados!' });
     }
 })
 
