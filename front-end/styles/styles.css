@@ -8,10 +8,10 @@
 
 :root {
   --destaque-azul: #2f8aa5;
-  --destaque-amarelo: #ffc107;
+  --destaque-amarelo: #f3dd16;
   --cor-titulo: #ffffff;
   --cor-texto: #ebebeb;
-  --cor-rodape: #1b4f5f;
+  --cor-azul-escuro: #1b4f5f;
   --font-fredoka: "Fredoka", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
@@ -19,6 +19,7 @@
 body {
   width: 100%;
   font-family: "Inter", sans-serif;
+  background-color: var(--destaque-azul);
 }
 
 /* Cabecalho */
@@ -57,7 +58,7 @@ body {
 .botao-login {
   font-weight: 700;
   background-color: var(--destaque-amarelo);
-  color: var(--destaque-azul);
+  color: var(--cor-azul-escuro);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -183,83 +184,83 @@ body {
 }
 
 .container-texto {
-    width: 100%;
-    padding-bottom: 28px;
-    padding-right: 35px;
+  width: 100%;
+  padding-bottom: 28px;
+  padding-right: 35px;
 }
 
 .container-texto h3 {
-    width: 50%;
-    font-family: var(--font-fredoka);
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 58.5px;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 15px;
+  width: 50%;
+  font-family: var(--font-fredoka);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 58.5px;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 15px;
 }
 
 .container-texto p {
-    width: 50%;
-    height: 81px;
-    font-family: var(--font-inter);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    color: rgba(235, 235, 235, 1);
+  width: 50%;
+  height: 81px;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(235, 235, 235, 1);
 }
 
 .container-botao-login {
-    width: 195px;
-    height: 56px;
-    font-family: var(--font-inter);
-    font-size: 20px;
-    line-height: 20px;
-    align-content: center;
-    font-weight: 600;
-    background-color: rgba(243, 221, 22, 1);
-    color: rgba(27, 79, 95, 1);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: 195px;
+  height: 56px;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  line-height: 20px;
+  align-content: center;
+  font-weight: 600;
+  background-color: var(--destaque-amarelo);
+  color: var(--cor-azul-escuro);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .container-botao-login:hover {
-    background-color: #eab107;
-    scale: 1.15;
+  background-color: #eab107;
+  scale: 1.15;
 }
 
 .rodape {
-    width: 100%;
-    height: 254px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 54px 130px;
-    opacity: 0.9;
-    background-color: var(--cor-rodape);
+  width: 100%;
+  height: 254px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 54px 130px;
+  opacity: 0.9;
+  background-color: var(--cor-azul-escuro);
 }
 
 .rodape-logo-container {
-    width: 121px;
-    height: 32px;
-    gap: 32px;
+  width: 121px;
+  height: 32px;
+  gap: 32px;
 }
 
 .rodape-logo {
-    width: 100%;
+  width: 100%;
 }
 
 .rodape-texto {
-    font-family: var(--font-inter);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 250px;
-    color: rgba(255, 255, 255, 1);
-    opacity: 30%;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 250px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 30%;
 }
