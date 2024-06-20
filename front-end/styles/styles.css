@@ -10,7 +10,7 @@
   --destaque-azul: #2f8aa5;
   --destaque-amarelo: #f3dd16;
   --cor-titulo: #ffffff;
-  --cor-texto: #ebebeb;
+  --cor-texto: #ebebebed;
   --cor-azul-escuro: #1b4f5f;
   --font-fredoka: "Fredoka", sans-serif;
   --font-inter: "Inter", sans-serif;
@@ -67,7 +67,7 @@ body {
 }
 
 .botao-login:hover {
-  background-color: #eab107;
+  background-color: #e4cf0d;
   scale: 1.15;
 }
 
@@ -117,76 +117,66 @@ body {
 
 .container-cartoes {
   width: 100%;
-  height: 550px;
-  padding: 10px ;
-}
-
-.cards {
-  float: left;
+  min-height: 550px;
+  padding: 130px 15px 80px 15px;
   display: flex;
   justify-content: center;
-  width: 1440px;
-  height: 546px;
-  top: 700px;
-  gap: 0px;
-  opacity: 0px;
-
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.benefícios .card-item {
+.cartao-item {
+  width: 100%;
+  max-width: 380px;
+  min-height: 310px;
+  padding: 30px 25px;
+  background-color: var(--cor-azul-escuro);
   color: white;
-  float: left;
-  background-color:  #1B4F5F;
-  ;
-  margin: 15px;
-  border-radius: 14px;
   text-align: center;
-  Width: 380px;
-  Height: 350px;
-  transition: 0.2s;
-  padding: 40px;
-  border-radius: 20px;
-  margin-top: 45px;
-
-
+  border-radius: 25px;
+  transition: all .3s ease;
 }
 
-.benefícios .card-item img {
-  border-radius: 100%;
+.cartao-item img {
   width: 80px;
-  display: block;
-  margin: 10px auto
+  border-radius: 100%;
 }
 
-.benefícios .card-item .nome-user {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 15px;
-  line-height: 39px;
-  text-align: center;
-  
-  
+.cartao-titulo {
+  font-family: var(--font-fredoka);
+  font-size: 1.75rem;
+  padding: 16px 0;
 }
 
-.benefícios .card-item .benefícios-user {
-  font-size: 15px;
-  padding: 0 15px;
+.cartao-descricao {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--cor-texto);
 }
 
-.benefícios .card-item:hover {
-  background-color:  #689CAB;
-  margin-top: -5px;
+.cartao-item:hover {
+  background-color: #22697e;
+  margin-bottom: 25px;
 }
 
-.benefícios .card-item:hover .nome-user {
-  color: rgb(218, 197, 37);
-  
+.cartao-item:hover .cartao-titulo {
+  color: var(--destaque-amarelo);
 }
 
-.benefícios .card-item:hover .benefícios-user {
-  color: white;
+.cartao-item:hover .cartao-descricao {
+  color: var(--cor-titulo);
 }
 
+.container-apresentacao {
+  width: 100%;
+  min-height: 1265px;
+  background-image: url("../assets/bg-02.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .video-apresentacao {
   width: 100%;
@@ -286,7 +276,7 @@ body {
 }
 
 .container-botao-login:hover {
-  background-color: #eab107;
+  background-color: #e4cf0d;
   scale: 1.15;
 }
 

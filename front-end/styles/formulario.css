@@ -8,7 +8,8 @@
 
 :root {
   --destaque-azul: #2f8aa5;
-  --destaque-amarelo: #ffc107;
+  --destaque-amarelo: #f3dd16;
+  --cor-azul-escuro: #1b4f5f;
   --cor-texto: #ffffff;
   --font-fredoka: "Fredoka", sans-serif;
   --font-inter: "Inter", sans-serif;
@@ -95,7 +96,7 @@ body {
   border-radius: 12px;
   border: none;
   background-color: var(--destaque-amarelo);
-  color: var(--destaque-azul);
+  color: var(--cor-azul-escuro);
   font-family: var(--font-inter);
   font-size: 1.25rem;
   font-weight: 700;
@@ -104,7 +105,7 @@ body {
 }
 
 .formulario-cadastro button:hover {
-  background-color: #eab107;
+  background-color: #e4cf0d;
 }
 
 .texto-login {
