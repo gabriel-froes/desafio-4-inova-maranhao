@@ -241,7 +241,7 @@ body {
   font-family: var(--font-fredoka);
   font-size: 2.75rem;
   color: var(--cor-titulo);
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .container-texto p {
@@ -411,7 +411,7 @@ body {
   }
 
   .content h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -463,11 +463,11 @@ body {
   }
 
   .sobre {
-    min-height: auto;
-    padding: 100px 15px;
-    background-position-x: center;
-    background-position-y: center;
-    justify-content: center;
+    min-height: 700px;
+    padding: 50px 15px 200px 15px;
+    background-image: url("../assets/bg-02-mobile.jpg");
+    background-position: center;
+    align-items: flex-start;
   }
 
   .sobre-conteudo {
@@ -485,10 +485,13 @@ body {
   }
 
   .container-chamada {
-    min-height: 500px;
-    padding: 100px 15px;
+    min-height: 700px;
+    padding: 0px 15px 200px 15px;
+    background-image: url("../assets/bg-03-mobile.jpg");
+    background-position: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
