@@ -38,15 +38,22 @@ Somos a Equipe 6, que é composta por:
 
 👨🏼‍💻 Back-end:
 
-- [](https://www.linkedin.com/in/)
+- [Carlos Jean](https://www.linkedin.com/in/carlos-jean-132914209/)
+- [Gabriel Froes](https://www.linkedin.com/in/gabriel-froes-tr/)
+- [Ícaro Martins](https://www.linkedin.com/in/ícaro-martins-7a45a425a)
 
 👩🏻‍💻 Front-end:
 
+- [Deise Rodrigues](https://www.linkedin.com/in/deise-srodrigues/)
 - [Layna Moraes](https://www.linkedin.com/in/layna-moraes/)
+- [Maiara Cristina](https://www.linkedin.com/in/maiaracristina-3b9609315)
+- [Roberta Soares](https://www.linkedin.com/in/roberta-de-cássia-838736223/)
 
 ✒ UX Design:
 
-- [](https://www.linkedin.com/in/)
+- [Luana Beatriz ](luannabeatriz0115@gmail.com)
+- [Luyza Lohane](luyzalohane@gmail.com)
+- [Vitor Oliveira Ferreira](vitor.oferreira25@gmail.com)
 
 🎮 Jogos:
 
