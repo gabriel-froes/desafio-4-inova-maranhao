@@ -41,7 +41,7 @@ async function registerNewUser() {
 
           setTimeout(() => {
             // redirecionando para página de login
-            window.location.href = "login.html"
+            window.location.href = "https://equipe6-trilas.itch.io/capboss"
           }, 2000)
         } else {
           messageResponse.innerHTML = data.message

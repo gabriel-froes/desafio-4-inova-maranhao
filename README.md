@@ -41,6 +41,8 @@ Somos a Equipe 6, que é composta por:
 - [Carlos Jean](https://www.linkedin.com/in/carlos-jean-132914209/)
 - [Gabriel Froes](https://www.linkedin.com/in/gabriel-froes-tr/)
 - [Ícaro Martins](https://www.linkedin.com/in/ícaro-martins-7a45a425a)
+- [Marcelo Antonio](https://www.linkedin.com/in/marcelo-antonio-carvalho-florentino-abb903248)
+- [Maria Eduarda Azevedo](https://github.com/Duda0305)
 
 👩🏻‍💻 Front-end:
 
@@ -48,20 +50,24 @@ Somos a Equipe 6, que é composta por:
 - [Layna Moraes](https://www.linkedin.com/in/layna-moraes/)
 - [Maiara Cristina](https://www.linkedin.com/in/maiaracristina-3b9609315)
 - [Roberta Soares](https://www.linkedin.com/in/roberta-de-cássia-838736223/)
+- Luann Phillipe
 
 ✒ UX Design:
 
-- [Luana Beatriz ](luannabeatriz0115@gmail.com)
+- [Luana Beatriz](luannabeatriz0115@gmail.com)
 - [Luyza Lohane](luyzalohane@gmail.com)
+- [Kelly Bianca](bm21112004@gmail.com)
 - [Vitor Oliveira Ferreira](vitor.oferreira25@gmail.com)
 
 🎮 Jogos:
 
-- [](https://www.linkedin.com/in/)
+- [João Victor Lima Azevedo](jvlazevedo03@gmail.com)
 
 🎲 Dados:
 
-- [](https://www.linkedin.com/in/)
+- [Francisco Roberto](https://github.com/franciscorcb)
+- [Josué Silva](https://github.com/Josuejs1)
+- Paulo Henrique De Souza
 
 <br>
 
@@ -77,6 +83,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
 - Swagger
 - Bcrypt
 - Render
+- Git
 
 <br>
 
@@ -85,6 +92,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
 - JavaScript
 - HTML
 - CSS
+- Git
 
 <br>
 
@@ -96,10 +104,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
 
 🎮 Jogos:
 
--
+- Unity
+- C#
+- itch.io
+- Git
 
 <br>
 
 🎲 Dados:
 
--
+- Looker Studio
+- Google Forms
+- Google Planilhas
